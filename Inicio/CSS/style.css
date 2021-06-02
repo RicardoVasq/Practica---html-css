@@ -1,0 +1,377 @@
+/* Estilo para todo el contenido */
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* Estilo Navegador*/
+
+    /*Contenedor del Nav */
+    .conteiner__nav{
+      background-color: rgb(4, 49, 49);
+      height:auto;
+      width: 100%;
+      align-content: center;
+      position:absolute;
+      z-index: 1500;
+    }
+
+    /* Conteneder de la lista */
+    .conteiner__nav-ul{
+        position: relative;
+        top: 0;
+        height: 54px;
+        text-align: center;
+        margin: 0;
+        list-style: none;
+        z-index: 10;
+        
+    }
+
+    .responsive__nav{
+        display: none;
+    }
+
+    /* Elementos del Nav */
+    .conteiner__nav-li{
+        height: 54px;
+        display: inline-block;
+        padding: 12px;
+        text-align: center;
+        align-content: center;
+        z-index: 20;
+    }
+
+    /* Etiquetas a, dentro de los elementos de la lista */
+    .conteiner__nav-li a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 5px;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .conteiner__nav-li-img a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* img, dentro de los elementos de la lista */
+    .conteiner__nav-li img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        transition: 0.5s;
+    }
+
+    /* transisiciones o animaciones del nav */
+
+    .conteiner__nav-li:hover img{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+    
+    }
+
+    .conteiner__nav-li:hover a{
+        color:rgb(88, 82, 82);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .conteiner__nav-li:hover li{
+        height: 100px;
+    }
+
+/* Banner */
+
+/* Novedades */
+    .parrafo_banner div{
+        background-color: rgba(44, 42, 42, 0.418);
+    }
+    .parrafo_banner p{
+        
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        top:0;
+        margin:0;
+        padding-top: 15em;
+        padding-left: 50vw;
+        padding-right: auto;
+        
+        
+        font-size: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: blanchedalmond;
+    }
+
+    .banner__logo{
+        position: absolute;
+        z-index: 30;
+        width: 50%;
+        top: 200PX;
+        left: 3vw; 
+        transition: 1.5s;   
+    }
+
+    .banner__logo:hover{
+        width: 70%;    
+    }
+
+
+
+    .BannerSlider__conter-img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+
+        position: absolute;
+        top: 15;
+        z-index: 10;
+        
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+
+    .BannerSlider__conter-img ul{
+        padding: 0;
+        display: flex;
+        width: 400%;
+        height: 100%;
+        animation: cambio 15s infinite alternate;
+    }
+
+    .BannerSlider__conter-img li{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .BannerSlider__conter-img img{
+        width: 100%;
+        height: 100%;
+        opacity: 70%;
+        object-fit: cover;
+        object-position: left;
+        }
+    
+    .BannerSlider__resposnive{
+        display: none;
+    }    
+     
+    @keyframes cambio {
+        0% { margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25% { margin-left: -100%;}
+        45% {margin-left: -100%;}
+
+        50% { margin-left: -200%;}
+        70% {margin-left: -200%;}
+
+        75% { margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+/* Pie de pagina */
+
+    .page{
+    position: absolute;
+    top: 91.5%;
+    display: inline-block;
+    background-color: rgb(4, 49, 49);
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    }
+
+    .page div{
+    display: inline-block;
+    }
+
+    .page__redes p{
+    display: inline-block;
+    }
+
+    .page__facebook{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 80%;
+    }
+
+    .page__insta{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 85%;
+    }
+
+    .page__twitter{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 90%;
+    }
+    .page{
+    color: rgb(160, 160, 160);
+    font-size: 10pt;
+    }
+
+    .page__contactos{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    }
+
+    .page__derechos{
+    margin-left: 10px; 
+    }
+
+ /* Responsive movil */
+ @media only screen and (max-width : 501px){
+     /* Responsive nav */
+    .conteiner__nav{
+        position:absolute;
+        z-index: 1500;
+    }
+
+    .conteinier__nav-ul{
+        display: none;
+        position:absolute;
+    }
+    .responsive__nav{
+        display: inline-block;
+    }
+
+    .responsive__li{
+        display:block;
+        margin: 10px;
+    }
+
+    .responsive__li img{
+        width: 85%;
+        position: relative;
+        left: 0%;
+        transition: 1.5s;
+        z-index: 550;
+    }
+
+    .responsive__li a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 12pt;
+        margin-left: 30px;
+    }
+
+    .responsive__li:hover > img{
+        width: 90%;
+        left: 0%;
+    }
+    .responsive__li:hover > a {
+        background-color: rgb(7, 37, 37);
+    }
+
+/* responsive Body */
+.BannerSlider__conter-img {
+    width: 100%;
+    height: 75%;
+    opacity: 70%;
+    object-fit: contain;
+    object-position: right;
+    top: 200px;
+    }
+    .BannerSlider__conter-img img{
+        width: 800px;
+        height: 800px;
+        object-fit: contain;
+        object-position: top;
+    }
+.parrafo_banner {
+    display: none;
+}
+
+.banner__logo{
+    display: none;
+}  
+
+/* responsive pie de page */
+
+.page .page__contactos{
+    display: none;
+}
+
+.page .page__derechos{
+    display: none;
+}
+
+.page {
+    height: 50px;
+
+}
+
+    .page__facebook{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 20%;
+    }
+
+    .page__insta{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 45%;
+    }
+
+    .page__twitter{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 25px;
+    left: 70%;
+    }
+}
+
+
+
+/* responsive Body */
+@media only screen and (max-width : 1100px){
+    .BannerSlider__conter-img {
+        height: 100%; 
+    }
+    
+    .BannerSlider__conter-img img{
+        object-fit: cover;
+    }
+
+    .parrafo_banner p{
+        padding-top: 30em;
+        padding-left: 50vw;
+        padding-right: auto;
+
+        font-size: 1em;
+    }
+}
