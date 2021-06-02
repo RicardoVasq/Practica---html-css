@@ -1,0 +1,550 @@
+/* Estilo para todo el contenido */
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Navegador*/
+
+/*Contenedor del Nav */
+    .conteiner__nav{
+    background-color: rgb(4, 49, 49);
+    height:auto;
+    width: 100%;
+    align-content: center;
+    }
+
+/* Conteneder de la lista */
+    .conteiner__nav-ul{
+        position: relative;
+        top: 0;
+        height: 54px;
+        text-align: center;
+        margin: 0;
+        list-style: none;
+        z-index: 10;
+        
+    }
+
+    .responsive__nav{
+        display: none;
+    }
+
+/* Elementos del Nav */
+    .conteiner__nav-li{
+        height: 54px;
+        display: inline-block;
+        padding: 12px;
+        text-align: center;
+        align-content: center;
+        z-index: 20;
+    }
+
+/* Etiquetas a, dentro de los elementos de la lista */
+    .conteiner__nav-li a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 5px;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .conteiner__nav-li-img a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+    }
+/* img, dentro de los elementos de la lista */
+    .conteiner__nav-li img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        transition: 0.5s;
+    }
+
+/* transisiciones o animaciones del nav */
+
+    .conteiner__nav-li:hover img{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .conteiner__nav-li:hover a{
+        color:rgb(88, 82, 82);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .conteiner__nav-li:hover li{
+        height: 100px;
+    }
+
+
+/* formulario */
+
+
+    h1 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 100px;
+        color: teal;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: 'Roboto', sans-serif, 'arial';
+        font-weight: 400;
+        font-size: 20px;
+        color: #9b9b9b;
+        line-height: 1.5;
+    }
+
+
+    /* Inputs */
+
+    input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+        font-size: 0.75em;
+        color: #999;
+        top: -5px;
+        -webkit-transition: all 0.225s ease;
+        transition: all 0.225s ease;
+    }
+
+
+    .styled-input {
+        float: left;
+        width: 293px;
+        margin: 1rem 0;
+        position: relative;
+        border-radius: 4px;
+    }
+
+
+
+    .styled-input label {
+        color: #999;
+        padding: 1.3rem 30px 1rem 30px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        pointer-events: none;
+    }
+
+    .styled-input.wide { 
+        width: 650px;
+        max-width: 100%;
+    }
+
+
+    input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: rgb(3, 56, 56);
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: rgb(40, 70, 70);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pie de pagina */
+
+    .page{
+    display: inline-block;
+    background-color: rgb(4, 49, 49);
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    }
+
+    .page div{
+    display: inline-block;
+    }
+
+    .page__redes p{
+    display: inline-block;
+    }
+
+    .page__facebook{
+    position: relative;
+    width: 3vw;
+    margin-left: 30vw;
+    }
+
+    .page__insta{
+        position: relative;
+        width: 3vw;
+        margin-left: 2vw;
+    }
+
+    .page__twitter{
+        position: relative;
+        width: 3vw;
+        margin-left: 2vw;
+    }
+    .page{
+    color: rgb(160, 160, 160);
+    font-size: 10pt;
+    }
+
+    .page__contactos{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    }
+
+    .page__derechos{
+    margin-left: 10px; 
+    }
+
+ 
+
+
+    /* RESPONSIVE MOVIL*/
+
+    @media only screen and (max-width : 501px){
+        /* Responsive nav */
+       .conteiner__nav{
+           position:absolute;
+           z-index: 1500;
+           top: 0;
+       }
+   
+       .conteinier__nav-ul{
+           display: none;
+           position:absolute;
+       }
+       .responsive__nav{
+           display: inline-block;
+       }
+   
+       .responsive__li{
+           display:block;
+           margin: 10px;
+       }
+   
+       .responsive__li img{
+           width: 85%;
+           position: relative;
+           left: 0%;
+           transition: 1.5s;
+           z-index: 550;
+       }
+   
+       .responsive__li a{
+           display: block;
+           color: white;
+           text-decoration: none;
+           font-size: 12pt;
+           margin-left: 30px;
+       }
+   
+       .responsive__li:hover > img{
+           width: 90%;
+           left: 0%;
+       }
+       .responsive__li:hover > a {
+           background-color: rgb(7, 37, 37);
+       }
+   
+   /* responsive Body */
+
+
+/* SERVICIOS MEDICOS */
+
+.titulo{
+    position: relative;
+    top: 60vw;
+}
+.titulo h1{
+    padding: 2vw;
+    font-size: 10vw;
+}
+/* CONSULTA GENERAL */
+.consulta_general{
+    position: relative;
+    top: 75vw;
+}
+.consulta_general img{
+    display: none;
+}
+
+.consulta_general h3 {
+    display:inline-block;
+    font-size: 8vw;
+    color: teal;
+}
+
+.consulta_general .concept {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+.consulta_general .referencia {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+
+/* PEDIATRIA */
+.pediatria{
+    position: relative;
+    top: 80vw;
+}
+
+.pediatria img{
+    display: none;
+}
+
+.pediatria h3 {
+    display:inline-block;
+    font-size: 8vw;
+    color: teal;
+}
+
+.pediatria .concept {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+    
+}
+.pediatria .referencia {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+
+/*RADIOLOGIA*/
+.Radiologia {
+    position: relative;
+    top: 85vw;
+}
+
+.Radiologia img{
+    display: none;
+}
+
+.Radiologia h3 {
+    display:inline-block;
+    font-size: 8vw;
+    color: teal;
+}
+
+.Radiologia .concept {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+.Radiologia .referencia {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+
+/* Cirugia  */
+.cirugia{
+    position: relative;
+    top: 90vw;
+}
+.cirugia img{
+    display: none;
+}
+
+.cirugia > h3 {
+    display:inline-block;
+    font-size: 8vw;
+    color: teal; 
+}
+
+.cirugia .concept {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+.cirugia .referencia {
+    display: inline-block;
+    width: 80%;
+
+
+    bottom: 17vw;
+    left: 0vw;
+
+    margin-left: 8vw;
+    font-size: 3vw;
+}
+
+   /* responsive pie de page */
+   
+   .page .page__contactos{
+       display: none;
+   }
+   
+   .page .page__derechos{
+       display: none;
+   }
+   
+   .page {
+    position: relative;
+    top: 75vw;
+    height: 10vw;
+   }
+   
+       .page__facebook{
+       position: relative;
+       width: 5vw;
+       top: 3vw;
+       left: 8vw;
+       }
+   
+       .page__insta{
+        position: relative;
+        width: 5vw;
+        top: 3vw;
+        left: 2vw;
+       }
+   
+       .page__twitter{
+       position: relative;
+       width: 5vw;
+       top: 3vw;
+       margin-left: 12vw;
+       }
+   }

@@ -1,0 +1,328 @@
+/* Estilo para todo el contenido */
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Navegador*/
+
+/*Contenedor del Nav */
+    .conteiner__nav{
+    background-color: rgb(4, 49, 49);
+    height:auto;
+    width: 100%;
+    align-content: center;
+    }
+
+/* Conteneder de la lista */
+    .conteiner__nav-ul{
+        position: relative;
+        top: 0;
+        height: 54px;
+        text-align: center;
+        margin: 0;
+        list-style: none;
+        z-index: 10;
+        
+    }
+
+    .responsive__nav{
+        display: none;
+    }
+
+/* Elementos del Nav */
+    .conteiner__nav-li{
+        height: 54px;
+        display: inline-block;
+        padding: 12px;
+        text-align: center;
+        align-content: center;
+        z-index: 20;
+    }
+
+/* Etiquetas a, dentro de los elementos de la lista */
+    .conteiner__nav-li a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 5px;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .conteiner__nav-li-img a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+    }
+/* img, dentro de los elementos de la lista */
+    .conteiner__nav-li img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        transition: 0.5s;
+    }
+
+/* transisiciones o animaciones del nav */
+
+    .conteiner__nav-li:hover img{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .conteiner__nav-li:hover a{
+        color:rgb(88, 82, 82);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .conteiner__nav-li:hover li{
+        height: 100px;
+    }
+
+
+/* CUERPO */
+
+
+
+    .titulo{
+        padding: 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5vw;
+        text-align: right;
+        margin: 0;
+        background-color: rgba(128, 128, 128, 0.384);
+
+        background-color: rgba(128, 128, 128, 0.384);
+        margin: 0;
+
+        color: teal;
+    }
+
+div{
+        display: flex;
+        margin-top: 5vw;
+        margin-bottom: 9vw;
+    }
+
+    .mision__ul p{
+        padding: 2vw;
+        width: 33vw;
+    }
+
+    .vision__ul p{
+        padding: 2vw;
+        width: 33vw;
+    }
+
+    .valores__ul p{
+        padding: 2vw;
+        width: 33vw;
+    }
+
+    div ul{
+    list-style: none;
+    }
+
+    ul li > h3{
+        text-align: center;
+        font-size: 3vw;
+        color: teal;
+    }
+
+    ul li > p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        text-align: justify;
+    }
+
+    ul li > ul{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 3.5vw;
+        list-style: square;
+    }
+    
+ul h3:hover{
+    font-size: 4vw;
+}
+
+
+/* Pie de pagina */
+
+
+.page{
+display: inline-block;
+background-color: rgb(4, 49, 49);
+height: auto;
+width: 100%;
+z-index: 1000;
+}
+
+.page div{
+display: inline-block;
+}
+
+.page__redes p{
+display: inline-block;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+}
+
+.page__redes {
+    margin-top: 0vw;
+        margin-bottom: 0vw;
+}
+
+.page__facebook{
+position: relative;
+width: 3vw;
+margin-left: 30vw;
+margin-top: 0vw;
+        margin-bottom: 0vw;
+}
+
+.page__insta{
+    position: relative;
+    width: 3vw;
+    margin-left: 2vw;
+    margin-top: 0vw;
+        margin-bottom: 0vw;
+}
+
+.page__twitter{
+    position: relative;
+    width: 3vw;
+    margin-left: 2vw;
+    margin-top: 0vw;
+        margin-bottom: 0vw;
+}
+.page{
+color: rgb(160, 160, 160);
+font-size: 10pt;
+}
+
+.page__contactos{
+margin-top: 10px;
+margin-left: 200px;
+margin-bottom: 10px;
+}
+
+.page__derechos{
+margin-left: 10px;
+margin-top: 0vw;
+        margin-bottom: 0vw; 
+}
+
+
+
+ 
+
+
+    /* RESPONSIVE MOVIL*/
+
+    @media only screen and (max-width : 501px){
+        /* Responsive nav */
+       .conteiner__nav{
+           position:absolute;
+           z-index: 1500;
+           top: 0;
+       }
+   
+       .conteinier__nav-ul{
+           display: none;
+           position:absolute;
+       }
+       .responsive__nav{
+           display: inline-block;
+       }
+   
+       .responsive__li{
+           display:block;
+           margin: 10px;
+       }
+   
+       .responsive__li img{
+           width: 85%;
+           position: relative;
+           left: 0%;
+           transition: 1.5s;
+           z-index: 550;
+       }
+   
+       .responsive__li a{
+           display: block;
+           color: white;
+           text-decoration: none;
+           font-size: 12pt;
+           margin-left: 30px;
+       }
+   
+       .responsive__li:hover > img{
+           width: 90%;
+           left: 0%;
+       }
+       .responsive__li:hover > a {
+           background-color: rgb(7, 37, 37);
+       }
+   
+   /* responsive Body */
+
+
+
+
+
+
+
+
+
+   /* responsive pie de page */
+   
+   .page .page__contactos{
+       display: none;
+   }
+   
+   .page .page__derechos{
+       display: none;
+   }
+   
+   .page {
+    position: relative;
+    top: 75vw;
+    height: 10vw;
+   }
+   
+       .page__facebook{
+       position: relative;
+       width: 5vw;
+       top: 3vw;
+       left: 8vw;
+       }
+   
+       .page__insta{
+        position: relative;
+        width: 5vw;
+        top: 3vw;
+        left: 2vw;
+       }
+   
+       .page__twitter{
+       position: relative;
+       width: 5vw;
+       top: 3vw;
+       margin-left: 12vw;
+       }
+   }
